@@ -1,0 +1,12 @@
+<div class="relative">
+    <div class="carousel-container overflow-x-hidden">
+        <div class="carousel" [style.transform]="transformStyle">
+            <ng-container *ngFor="let item of carouselData">
+                <a class="carousel-item">
+                    <img [src]="item.image" alt="">
+                </a>
+            </ng-container>
+
+        </div>
+    </div>
+</div>
