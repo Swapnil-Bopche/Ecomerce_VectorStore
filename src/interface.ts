@@ -8,35 +8,56 @@ export interface IProducts {
     brand: string,
     price: string,
     color: string,
+    disscount: string,
     description: string,
     quantity: number,
     title: string,
+    discountedPrice: string
+}
+
+export interface ILogo {
+    imageUrl: string,
+}
+
+
+export interface Ifetured {
+    name: string,
+    imageSrc: string,
+    imageAlt: string
+}
+
+export interface Iitems {
+    id: string,
+    name: string,
+}
+
+export interface Isections {
+    id: string,
+    name: string,
+    items: Iitems[]
+}
+
+
+export interface ICategories {
+    id: string,
+    name: string,
+    featured: Ifetured[],
+    sections: Isections[],
+
+}
+
+
+export interface Ioptions {
+    value: string,
+    label: string
+}
+
+export interface IFilter {
+    id: string,
+    name: string,
+    options: Ioptions[]
 }
 
 
 
 
-// export interface INavigationItem {
-//     name: string;
-//     id: string;
-//     href: string; // Optional property for links
-//     imageSrc: string; // Optional property for images
-//     imageAlt: string; // Optional property for image descriptions
-//     items: INavigationItem[]; // Optional for nested items
-// }
-
-// export interface INavigationCategory {
-//     id: string;
-//     name: string;
-//     featured: INavigationItem[]; // Optional featured items
-//     sections: {
-//         id: string;
-//         name: string;
-//         items: INavigationItem[];
-//     }[];
-// }
-
-// export interface INavigation {
-//     categories: INavigationCategory[];
-//     pages: INavigationItem[];
-// }

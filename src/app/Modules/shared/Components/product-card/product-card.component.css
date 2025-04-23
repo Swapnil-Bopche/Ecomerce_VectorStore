@@ -1,0 +1,11 @@
+.product_card .text_part{
+    transition: transform 0.3s ease-in-out;
+}
+
+.product_card:hover .text_part{
+    transform: translateY(-1rem);
+}
+
+.product_card:hover{
+    box-shadow: #000000 0px 5px 15px;
+}

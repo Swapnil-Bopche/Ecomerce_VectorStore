@@ -1,0 +1,22 @@
+<div class=" product_card w-[17rem]  m-3 transition-all cursor-pointer">
+    <div class="h-[19rem] w-[15rem]">
+        <img class="h-full w-full object-cover object-top" [src]="Pants?.imageUrl" alt="">
+    </div>
+
+    <div class="text_part p-3 bg-[#0b0b0b]">
+        <div>
+            <p class="opacity-80">{{Pants?.brand}} </p>
+            <p> {{Pants?.title}} </p>
+            <p class="text-gray-600"> {{Pants?.color}} </p>
+        </div>
+        <div class="flex flex-wrap items-center space-x-5">
+            <p class="font-bold">{{Pants?.discountedPrice | currency:'INR' }}</p>
+            <p class="line-through text-gray-400"> {{Pants?.price | currency:'INR'}} </p>
+            <p class="text-green-500 font-semibold"> {{Pants?.disscount}}% </p>
+        </div>
+    </div>
+
+
+
+
+</div>
